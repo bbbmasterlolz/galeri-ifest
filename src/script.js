@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
       slide,
       { x: "200%" }, // Mulai dari luar layar (kanan)
       {
-        x: "0%", // Gerak ke posisi normal
+        x: "20%", // Gerak ke posisi normal
         duration: 2,
         ease: "power2.out",
         scrollTrigger: {
