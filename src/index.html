@@ -269,14 +269,14 @@
         <!-- End - Navbar -->
       </div>
       <div class="hidden lg:block">
-        <div class="absolute mt-[4dvw] left-[5dvw]">
+        <div class="absolute mt-[4dvw] left-[5dvw] fadeIn">
           <img
             src="img/element/haze1.svg"
             alt="haze1"
             class="w-[230px] lg:w-[20dvw]"
           >
         </div>
-        <div class="absolute mt-[4dvw] right-[5dvw]">
+        <div class="absolute mt-[4dvw] right-[5dvw] fadeIn">
           <img
             src="img/element/haze2.svg"
             alt="haze1"
@@ -285,18 +285,17 @@
         </div>
       </div>
       <br>
-      <div class="flex max-w-[10dvw]" style="margin: auto;">
+      <div class="flex w-[100px] relative" style="margin: auto;">
         <img
           src="img/element/flag.svg"
           alt="flag"
-          class="w-[7dvw]"
+          class="w-[70px] lg:w-[100px] fadeIn -translate-x-[20px]"
           style="margin: auto;"
         >
         <img
           src="img/element/crab.svg"
           alt="crab"
-          class="w-[8dvw]" 
-          style="transform: translate(-3dvw, 3dvw);"
+          class="absolute w-[80px] lg:w-[120px] fadeIn bottom-0 translate-x-[20px]" 
         >
       </div>
       <div>
@@ -318,7 +317,7 @@
         </div>
       </div>
       <h1
-        class="text-center text-black mx-5 text-sm lg:text-base lg:mx-36 font-inter fadeIn max-w-sm mx-auto"
+        class="text-center text-black mx-5 text-sm lg:text-base lg:mx-36 font-inter fadeIn max-w-sm mx-auto p-5"
         style="--fade-duration: 1 max-width: 600px; margin: auto;"
       >
       Yuk, lihat keseruan kompetisi di IFEST #13! Mulai dari aksi seru peserta MUC, CTF, dan WDC, penilaian juri yang bikin deg-degan, sampai momen kemenangan para peserta yang keren-keren nih!
@@ -932,7 +931,7 @@
     </section>
     <!-- Start - slide 5 SEMNAS-->
     <section
-      class="w-full h-full bg-cover bg-center items-center justify-center"
+      class="relative h-full bg-cover bg-center items-center justify-center"
       style="background: linear-gradient(180deg, #67B7FF 0%, #0BDAFF 100%)"
       id="galeri-SEMNAS"
     >
@@ -1063,8 +1062,11 @@
         </div>
       </div>
       <br>
-      <img src="./img/element/sea_plant.svg" class="absolute w-20 md:w-[13dvw] -translate-y-[30px] slideRight right-0 scale-x-[-1] -translate-y-full" alt="sea_plant"/>
-      <img src="./img/element/sea_plant.svg" class="absolute w-20 md:w-[13dvw] -translate-y-[30px] slideLeft left-0 -translate-y-full" alt="sea_plant"/>
+      <div class="relative w-full h-20 md:h-[13dvw] -mt-20 lg:-mt-[9dvw]">
+        <img src="./img/element/sea_plant.svg" class="absolute w-20 md:w-[13dvw] bottom-0 slideRight right-0 scale-x-[-1]" alt="sea_plant"/>
+        <img src="./img/element/sea_plant.svg" class="absolute w-20 md:w-[13dvw] bottom-0 slideLeft left-0 " alt="sea_plant"/>
+      </div>
+      
     </section>
     <!-- Start - Footer-->
     <section>
