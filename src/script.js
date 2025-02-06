@@ -154,10 +154,10 @@ document.addEventListener("DOMContentLoaded", function () {
   gsap.utils.toArray(".slideRight").forEach((slide) => {
     gsap.fromTo(
       slide,
-      { x: "100vw" }, // Mulai dari luar layar (kanan)
+      { x: "400%" }, // Mulai dari luar layar (kanan)
       {
-        x: "0vw", // Gerak ke posisi normal
-        duration: 1,
+        x: "0%", // Gerak ke posisi normal
+        duration: 2,
         ease: "power2.out",
         scrollTrigger: {
           trigger: slide,
