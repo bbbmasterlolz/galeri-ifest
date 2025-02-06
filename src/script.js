@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
       { opacity: 0 }, // Mulai dari transparan
       {
         opacity: 1, // Gradual menjadi terlihat
-        duration: parseFloat(duration), // Gunakan durasi dari gaya inline
+        duration: 1, // Gunakan durasi dari gaya inline
         ease: "expo.inOut",
         scrollTrigger: {
           trigger: fade,
@@ -154,9 +154,9 @@ document.addEventListener("DOMContentLoaded", function () {
   gsap.utils.toArray(".slideRight").forEach((slide) => {
     gsap.fromTo(
       slide,
-      { x: "100%" }, // Mulai dari luar layar (kanan)
+      { x: "100vw" }, // Mulai dari luar layar (kanan)
       {
-        x: "0%", // Gerak ke posisi normal
+        x: "0vw", // Gerak ke posisi normal
         duration: 1,
         ease: "power2.out",
         scrollTrigger: {
