@@ -151,12 +151,26 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   });
 
+  gsap.utils.toArray(".move_side").forEach((slide) => {
+    gsap.fromTo(
+      slide,
+      { x: "70%" }, // Start off-screen to the right
+      {
+        x: "-100%", // Move off-screen to the left
+        duration: 2,
+        ease: "power2.inOut",
+        repeat: -1, // Infinite loop
+        yoyo: true, // Reverse the animation
+      }
+    );
+  });
+
   gsap.utils.toArray(".slideRight").forEach((slide) => {
     gsap.fromTo(
       slide,
-      { x: "200%" }, // Mulai dari luar layar (kanan)
+      { x: "100%" }, // Mulai dari luar layar (kanan)
       {
-        x: "20%", // Gerak ke posisi normal
+        x: "0%", // Gerak ke posisi normal
         duration: 2,
         ease: "power2.out",
         scrollTrigger: {
