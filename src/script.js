@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
   gsap.utils.toArray(".slideRight").forEach((slide) => {
     gsap.fromTo(
       slide,
-      { x: "90dvw" }, // Mulai dari luar layar (kanan)
+      { x: "200%" }, // Mulai dari luar layar (kanan)
       {
         x: "0%", // Gerak ke posisi normal
         duration: 2,
